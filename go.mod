@@ -1,4 +1,4 @@
-module github.com/devxp-tech/teste-loki
+module github.com/analect/teste-loki
 
 go 1.18
 

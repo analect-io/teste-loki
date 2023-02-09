@@ -4,7 +4,7 @@ metadata:
   name: "teste-loki"
   description: "Test Loki"
   annotations:
-    github.com/project-slug: devxp-tech/teste-loki
+    github.com/project-slug: analect/teste-loki
     backstage.io/techdocs-ref: dir:.
     argocd/app-name: dev-teste-loki
     backstage.io/kubernetes-id: "teste-loki"
@@ -37,4 +37,4 @@ spec:
   system: "lab"
   type:  "service"
   lifecycle: "experimental"
-  owner: "devxp-tech"
+  owner: "analect"

@@ -112,7 +112,7 @@ jobs:
           push: true
           secrets: |
             GIT_AUTH_TOKEN=${{ github.token }}
-          tags: ghcr.io/devxp-tech/teste-loki:${{ needs.vars.outputs.tag }},ghcr.io/devxp-tech/teste-loki:latest
+          tags: ghcr.io/analect/teste-loki:${{ needs.vars.outputs.tag }},ghcr.io/analect/teste-loki:latest
 
       - name: Build and Push Liquibase 🚀
         if:   github.event.inputs.migration == 'true'
@@ -122,7 +122,7 @@ jobs:
           context: liquibase
           secrets: |
             GIT_AUTH_TOKEN=${{ github.token }}
-          tags: ghcr.io/devxp-tech/teste-loki-migration:${{ needs.vars.outputs.tag }},ghcr.io/devxp-tech/teste-loki-migration:latest
+          tags: ghcr.io/analect/teste-loki-migration:${{ needs.vars.outputs.tag }},ghcr.io/analect/teste-loki-migration:latest
 
   trivy:
     name: Trivy Scan 🔒
@@ -136,7 +136,7 @@ jobs:
       - name: Run Trivy vulnerability scanner 🔎
         uses: aquasecurity/trivy-action@master
         with:
-          image-ref: ghcr.io/devxp-tech/teste-loki:${{ needs.vars.outputs.tag }}
+          image-ref: ghcr.io/analect/teste-loki:${{ needs.vars.outputs.tag }}
           format: 'sarif'
           output: 'trivy-results.sarif'
 
@@ -178,7 +178,7 @@ jobs:
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
-        git commit -am ":robot: [GitHub Action] Set new image tag to https://github.com/devxp-tech/teste-loki/commit/${{ needs.vars.outputs.tag }}"
+        git commit -am ":robot: [GitHub Action] Set new image tag to https://github.com/analect/teste-loki/commit/${{ needs.vars.outputs.tag }}"
         git push
 
   slack-workflow-status:
