@@ -1,4 +1,4 @@
-module github.com/analect/teste-loki
+module github.com/analect-io/teste-loki
 
 go 1.18
 

@@ -1,8 +1,8 @@
 package main
 
 import (
-	_ "github.com/analect/teste-loki/config"
-	"github.com/analect/teste-loki/controllers"
+	_ "github.com/analect-io/teste-loki/config"
+	"github.com/analect-io/teste-loki/controllers"
 	"github.com/gin-gonic/gin"
 )
 
