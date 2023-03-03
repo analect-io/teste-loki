@@ -10,10 +10,10 @@ on:
 
 jobs:
   env:
-    uses: devxp-tech/.github/.github/workflows/env.yaml@main
+    uses: analect-io/.github/.github/workflows/env.yaml@main
 
   docs:
-    uses: devxp-tech/.github/.github/workflows/techdocs.yaml@main
+    uses: analect-io/.github/.github/workflows/techdocs.yaml@main
     secrets: inherit
     with:
       repository: ${{ needs.env.outputs.repository }}

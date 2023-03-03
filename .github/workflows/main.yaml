@@ -9,21 +9,21 @@ on:
 
 jobs:
   env:
-    uses: devxp-tech/.github/.github/workflows/env.yaml@main
+    uses: analect-io/.github/.github/workflows/env.yaml@main
 
   promote:
-    uses: devxp-tech/.github/.github/workflows/promote.yaml@main
+    uses: analect-io/.github/.github/workflows/promote.yaml@main
     secrets: inherit
     with:
       tag: ${{ needs.env.outputs.tag }}
       repository: ${{ needs.env.outputs.repository }}
-      url: https://${{ needs.env.outputs.repository }}.devxp-tech.io
+      url: https://${{ needs.env.outputs.repository }}.analect-io.io
       environment: production
     needs:
       - env
 
   notify:
-    uses: devxp-tech/.github/.github/workflows/notify.yaml@main
+    uses: analect-io/.github/.github/workflows/notify.yaml@main
     if: always()
     secrets: inherit
     needs:
