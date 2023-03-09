@@ -17,5 +17,5 @@ We ❤️ contributions big or small. [See our guide](contributing.md) on how to
 ### Thanks to all our contributors!
 
 <a href="https://github.com/analect-io/teste-loki/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=analect/teste-loki" />
+  <img src="https://contrib.rocks/image?repo=analect-io/teste-loki" />
 </a>

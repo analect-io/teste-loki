@@ -1,3 +1,3 @@
-* @analect/dev-team
-.github/* @analect/sre-team
-liquibase/* @analect/dba-team
+* @analect-io/dev-team
+.github/* @analect-io/sre-team
+liquibase/* @analect-io/dba-team
